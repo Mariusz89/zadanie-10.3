@@ -8,6 +8,7 @@ body {
 	height: 280px;
 	border: 1px solid;
 	overflow: hidden;
+	position: relative;
 }
 
 ul {
@@ -27,19 +28,25 @@ img {
 	margin-top: -20px;
 }
 
-.previous_next {
-	width: 650px;
-	margin: 0 auto;
-	text-align: center;
+#left,
+#right {
 	position: absolute;
-	top: 110px;
-	left: 360px;
+	top: 50%;
+	transform: translateY(-50%);	
 }
 
-i {
-	color: black;
-	padding: 10px 150px;
-	opacity: 0.5;
+#left .fa,
+#right .fa {
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#left {
+	left: 15px;
+}
+
+#right {
+	right: 15px;
 }
 
 i:hover {
